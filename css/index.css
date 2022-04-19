@@ -1,4 +1,4 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -87,7 +87,7 @@
 .pending {
   margin: 0.5rem;
   font-size: 1.2rem;
-} */
+}
 
 @media (max-width: 450px) {
   * {
@@ -111,11 +111,12 @@
   .heading-task {
   }
   .heading-list {
+    color: rgb(93, 93, 93);
     font-weight: 100;
-    color: rgba(0, 0, 0, 0.8);
   }
 
   .add-list {
+    position: static;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -141,39 +142,43 @@
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
+    padding: 0;
   }
   .card {
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 1rem;
     border: 1px solid rgba(255, 166, 0, 0.844);
     border-radius: 0.4em;
     box-shadow: 0.25rem 0.3rem 0.5rem rgba(0, 0, 0, 0.432);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: start;
+    height: 4rem;
+    border-radius: 0.8rem;
   }
   .card-heading {
     color: rgba(0, 0, 0, 0.605);
     font-weight: 100;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 100;
+    padding: 0rem;
+    border-bottom: 0;
   }
   /* 
 
-  .heading-task {
-    font-size: 2.5rem;
-  }
+ 
 
-  .heading-list {
-    color: rgb(93, 93, 93);
-    font-weight: 100;
-    font-size: 2.5rem;
-  }
+ 
 
   .add-list {
-    position: absolute;
-    top: 4.3rem;
-    display: flex;
-    right: 19rem;
+    
+    
     color: rgb(93, 93, 93);
     font-size: 1.3rem;
     font-weight: 100;
-    justify-content: center;
-    align-items: center;
+    
   }
 
   .icon {
@@ -188,19 +193,11 @@
   }
 
   .card-tab {
-    display: flex;
-    width: 100%;
-    padding: 1rem 10vh;
-    justify-content: center;
+    
   }
 
   .card {
-    width: 15rem;
-    text-align: center;
-    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.623);
-    height: 23rem;
-    border: 3px solid rgba(247, 104, 104, 0.8);
-    border-radius: 0.8rem;
+    
   }
 
   .card:not(:last-child) {
@@ -208,12 +205,7 @@
   }
 
   .card-heading {
-    color: rgb(247, 108, 108);
-    font-size: 2rem;
-    margin: 1.5rem 1.1rem;
-    font-weight: 100;
-    padding: 0.2rem;
-    border-bottom: 1px solid grey;
+    
   } */
 
   .card-para,
