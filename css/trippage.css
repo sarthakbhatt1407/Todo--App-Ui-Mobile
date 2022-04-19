@@ -103,6 +103,19 @@ body {
   body {
     padding: 0;
   }
+  .head {
+    margin-top: 4rem;
+  }
+  .add-list {
+    display: flex;
+    color: rgb(93, 93, 93);
+    font-size: 1.3rem;
+    font-weight: 100;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 1rem;
+  }
   .decorated {
     display: none;
   }
@@ -111,7 +124,7 @@ body {
   }
   .trip {
     display: block;
-    color: black;
+    color: rgba(0, 0, 0, 0.77);
     font-size: 2.5rem;
   }
   .card-heading {
@@ -124,7 +137,7 @@ body {
     right: 1.5rem;
     background-color: orangered;
     color: white;
-    padding: 0.5rem 0.65rem;
+    padding: 0.5rem 0.7rem;
     font-weight: bolder;
     border-radius: 50%;
   }
