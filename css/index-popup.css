@@ -1,141 +1,217 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 .blur {
-    filter: blur(0.2rem);
+  filter: blur(0.2rem);
 }
-
 .head {
-    padding: 4rem 18rem;
-    position: relative;
-
+  padding: 4rem 6rem;
+  position: relative;
 }
 
 .heading-task {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .heading-list {
-    color: rgb(93, 93, 93);
-    font-weight: 100;
-    font-size: 2.5rem;
-
+  color: rgb(93, 93, 93);
+  font-weight: 100;
+  font-size: 2.5rem;
 }
 
 .add-list {
-    position: absolute;
-    top: 4.3rem;
-    display: flex;
-    right: 19rem;
-    color: rgb(93, 93, 93);
-    font-size: 1.3rem;
-    font-weight: 100;
-    justify-content: center;
-    align-items: center;
-
+  position: absolute;
+  top: 4.3rem;
+  display: flex;
+  right: 6rem;
+  color: rgb(93, 93, 93);
+  font-size: 1.3rem;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
-    background-color: red;
-    width: 2rem;
-    height: 2rem;
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 0.4rem 0.5rem 0.6rem;
-    margin: 0.1rem 1rem;
-    border-radius: 50%;
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 0.4rem 0.5rem 0.6rem;
+  margin: 0.1rem 1rem;
+  border-radius: 50%;
 }
 
 .card-tab {
-    display: flex;
-    width: 100%;
-    padding: 1rem 10vh;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 1rem 1rem;
+  justify-content: center;
 }
 
 .card {
-    width: 15rem;
-    text-align: center;
-    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.623);
-    height: 23rem;
-    border: 3px solid rgba(247, 104, 104, 0.8);
-    border-radius: 0.8rem;
+  width: 15rem;
+  text-align: center;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.623);
+  height: 23rem;
+  border: 3px solid rgba(247, 104, 104, 0.8);
+  border-radius: 0.8rem;
 }
 
 .card:not(:last-child) {
-    margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 .card-heading {
-    color: rgb(247, 108, 108);
-    font-size: 2rem;
-    margin: 1.5rem 1.1rem;
-    font-weight: 100;
-    padding: 0.2rem;
-    border-bottom: 1px solid grey;
+  color: rgb(247, 108, 108);
+  font-size: 1.5rem;
+  margin: 1.5rem 1.1rem;
+  font-weight: 100;
+  padding: 0.2rem;
+  border-bottom: 1px solid grey;
 }
 
 .card-para {
-    color: red;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin: 2.2rem 1rem;
-    text-decoration: line-through;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 2.2rem 1rem;
+  text-decoration: line-through;
 }
 
 .check {
-    font-size: 1.2rem;
-    margin-right: 3rem;
-
+  font-size: 1rem;
+  margin-right: 3rem;
 }
 
-
 .pending {
-    margin: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 450px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 2rem;
+  }
+  .head {
+    position: relative;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 2rem;
+  }
+  .heading-cmn {
+    font-size: 2.6rem;
+  }
+  .heading-task {
+  }
+  .heading-list {
+    color: rgb(93, 93, 93);
+    font-weight: 100;
+  }
+
+  .add-list {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-span {
+    position: relative;
+  }
+  .icon {
+    display: inline-block;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    padding: 0.4rem 0.5rem;
+    color: white;
     font-size: 1.2rem;
+  }
+  .card-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  .card {
+    padding: 1.2rem 1rem;
+    border: 1px solid rgba(255, 166, 0, 0.844);
+    border-radius: 0.4em;
+    box-shadow: 0.25rem 0.3rem 0.5rem rgba(0, 0, 0, 0.432);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: start;
+    height: 5rem;
+    border-radius: 0.8rem;
+  }
+  .card-heading {
+    color: rgba(0, 0, 0, 0.605);
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 100;
+    padding: 0rem;
+    border-bottom: 0;
+  }
+  .card-para,
+  .check,
+  .pending,
+  .add-list-heading {
+    display: none;
+  }
 }
 
 .add {
-    position: absolute;
-    border: 2px solid orange;
-    display: flex;
-    border-radius: 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-    top: 50%;
-    left: 50%;
-    height: 9rem;
-    background: white;
-    width: 22rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.623);
-    transform: translate(-50%, -50%);
+  position: absolute;
+  border: 2px solid orange;
+  display: flex;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  top: 60%;
+  left: 50%;
+  height: 9rem;
+  background: white;
+  width: 22rem;
+  box-shadow: 0.3rem 0.3rem 0.7rem rgba(0, 0, 0, 0.623);
+  transform: translate(-50%, -50%);
 }
 
 .add-para {
-    color: red;
-    font-weight: 500;
-    font-size: 1.3rem;
+  color: red;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .add-input {
-    border: 1px solid orange;
-    margin: 0.8rem 0 1rem 0;
-    padding: 0.5rem;
-    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.623);
+  border: 1px solid orange;
+  margin: 0.8rem 0 1rem 0;
+  padding: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.623);
 }
 
-
 .add-btn {
-    color: white;
-    background-color: red;
-    border-radius: 0.8rem;
-    padding: 0.4rem 1.5rem;
-    border: 1px solid red;
-    cursor: pointer;
+  color: white;
+  background-color: red;
+  border-radius: 0.8rem;
+  padding: 0.4rem 1.5rem;
+  border: 1px solid red;
+  cursor: pointer;
 }
