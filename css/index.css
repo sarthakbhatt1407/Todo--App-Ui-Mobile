@@ -144,12 +144,12 @@
   }
 
   .card {
-    width: 100%;
+    width: 50vh;
     position: relative;
     display: flex;
     align-items: center;
     box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.623);
-    height: 5rem;
+    height: 8rem;
     border: 3px solid rgba(247, 104, 104, 0.8);
     border-radius: 0.8rem;
   }
