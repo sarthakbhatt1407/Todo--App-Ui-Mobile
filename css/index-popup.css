@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .blur {
-  filter: blur(0.2rem);
+  filter: blur(0.4rem);
 }
 .head {
   padding: 4rem 6rem;
@@ -185,7 +185,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  top: 60%;
+  top: 50%;
   left: 50%;
   height: 9rem;
   background: white;
