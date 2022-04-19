@@ -103,7 +103,7 @@
     padding: 1rem 0;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .heading-cmn {
     font-size: 2.6rem;
@@ -154,13 +154,13 @@
     justify-content: center;
     width: 100%;
     text-align: start;
-    height: 4rem;
+    height: 5rem;
     border-radius: 0.8rem;
   }
   .card-heading {
     color: rgba(0, 0, 0, 0.605);
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 0;
     font-weight: 100;
     padding: 0rem;
