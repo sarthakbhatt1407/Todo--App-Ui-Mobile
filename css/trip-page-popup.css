@@ -154,7 +154,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(254, 189, 69);
+  border: 1.5px solid red;
   gap: 0.3rem;
   position: absolute;
   top: 50%;
