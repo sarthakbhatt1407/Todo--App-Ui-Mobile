@@ -70,7 +70,10 @@
   padding: 0.2rem;
   border-bottom: 1px solid grey;
 }
-
+.link {
+  text-decoration: none;
+  color: rgb(247, 108, 108);
+}
 .card-para {
   color: red;
   font-weight: bold;
