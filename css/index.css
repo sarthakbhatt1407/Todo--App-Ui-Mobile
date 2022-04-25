@@ -169,6 +169,9 @@
     padding: 0rem;
     border-bottom: 0;
   }
+  .link {
+    color: rgba(0, 0, 0, 0.605);
+  }
   .card-para,
   .check,
   .pending,
